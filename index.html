@@ -1,0 +1,43 @@
+index.html<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aaryan Football Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Aaryan Football Game</h1>
+
+<canvas id="game" width="1200" height="700"></canvas>
+
+<script src="game.js"></script>
+
+</body>
+</html>
+
+style.css
+body{
+ background:#111;
+ color:white;
+ text-align:center;
+ font-family:Arial;
+}
+
+canvas{
+ border:3px solid white;
+ background:#2e8b57;
+}
+
+game.js
+const canvas = document.getElementById("game");
+const ctx = canvas.getContext("2d");
+
+ctx.fillStyle = "white";
+ctx.font = "40px Arial";
+
+ctx.fillText(
+ "Welkom Aaryan!",
+ 400,
+ 350
+);
